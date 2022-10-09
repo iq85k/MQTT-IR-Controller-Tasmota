@@ -14,7 +14,7 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 - Hi-Link 3.3v
 - 2N2222 Transistor
 - IR TX LED
-- 10k Risistor
+- 10k Resistor
 - DHT11 temperature and humidity sensor
 - PCB screw terminal 2P connector
 

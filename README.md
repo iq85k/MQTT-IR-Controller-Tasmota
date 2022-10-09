@@ -8,7 +8,7 @@ This conntroller is runing with Tasmota IR 8.3.1 if you want to know More about 
 
 also using the SmartIR plugin that creates the Home Assistant climate componant and publish the commands via MQTT you can find more about it in details and more about installation Click Here
 
-# Required Componants
+# Required Components
 
 - ESP-01
 - Hi-Link 3.3v

@@ -4,9 +4,9 @@ Simple and Easy smart IR controller based on Tasmota via IRHVAC via SmartIR plug
 
 It's been about a 2 years since i made my first MQTT IR Controller and it been working flawlessly with Home Assistant and i feel it's about time to share this.
 
-This conntroller is runing with Tasmota IR 8.3.1 if you want to know More about Tasmota Click Here the reason why I'm using old version of Tasmota IR that this is the one worked best for me and never had any issues with so i keeped using it.
+This conntroller is runing with Tasmota IR 8.3.1 if you want to know More about Tasmota <a href="https://github.com/arendst/Tasmota">Click Here</a> the reason why I'm using old version of Tasmota IR that this is the one worked best for me and never had any issues with so i keeped using it.
 
-also using the SmartIR plugin that creates the Home Assistant climate componant and publish the commands via MQTT you can find more about it in details and more about installation Click Here
+also using the SmartIR plugin that creates the Home Assistant climate componant and publish the commands via MQTT you can find more about it in details and more about installation <a href="https://github.com/smartHomeHub/SmartIR">Click Here</a>
 
 # Required Components
 
@@ -51,3 +51,9 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 
 # Circuit diagram
 ![alt text](https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Circuit%20diagram.jpg)
+
+# Instructions
+- first you will need to install flash Tasmota on ESP-01 using USB to Serial UART adapter of your choice with the BIN file provided in files above.
+- after flashing you will need to connect to WIFI signal Called tasmota-xxxxxxxxx and insert your home WIFI credentials.
+- by providing WIFI credentials you will showen the IP address for your Tasmota device.
+- after the device is connected successfully you will be able to access your device to put in your MQTT info and choose a topic.

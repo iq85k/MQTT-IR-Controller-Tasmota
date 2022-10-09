@@ -10,23 +10,44 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 
 # Required Components
 
-- ESP-01
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/ESP-01.jpg" height="100" title="hover text">
-- Hi-Link 3.3v
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/Hi-Link%203.3v.jpg" height="100" title="hover text">
-- 2N2222 Transistor
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/2N2222%20Transistor.jpg" height="100" title="hover text">
-- IR TX LED
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/IR%20TX%20LED.jpg" height="100" title="hover text">
-- 10k Resistor
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/10k%20Risistor.jpg" height="100" title="hover text">
-- DHT11 temperature and humidity sensor
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/DHT11%20temperature%20and%20humidity%20sensor.jpg" height="100" title="hover text">
-- PCB screw terminal 2P connector
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/PCB%20screw%20terminal%202P%20connector.jpg" height="100" title="hover text">
-- Double-Side Prototype Board PCB
-<img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/Double-Side%20Prototype%20Board%20PCB.jpg" height="100" title="hover text">
-
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Photo</th>
+  </tr>
+  <tr>
+    <td>ESP-01</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/ESP-01.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>Hi-Link 3.3v</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/Hi-Link%203.3v.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>2N2222 Transistor</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/2N2222%20Transistor.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>IR TX LED</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/IR%20TX%20LED.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>10k Resistor</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/10k%20Risistor.jpg" height="100" title="hover text"></td>
+  </tr>
+    <tr>
+    <td>DHT11 temperature and humidity sensor</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/DHT11%20temperature%20and%20humidity%20sensor.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>PCB screw terminal 2P connector</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/PCB%20screw%20terminal%202P%20connector.jpg" height="100" title="hover text"></td>
+  </tr>
+  <tr>
+    <td>Double-Side Prototype Board PCB</td>
+    <td><img src="https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Required%20Components/Double-Side%20Prototype%20Board%20PCB.jpg" height="100" title="hover text"></td>
+  </tr>
+</table>
 
 # Circuit diagram
 ![alt text](https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Circuit%20diagram.jpg)

@@ -65,6 +65,8 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 
 # Sending IRHVAC Commands
 Source <a href="https://tasmota.github.io/docs/Tasmota-IR/#sending-irhvac-commands">Click Here</a>
+you can check example.json
+
 <table>
 <thead>
   <tr>
@@ -82,7 +84,7 @@ Source <a href="https://tasmota.github.io/docs/Tasmota-IR/#sending-irhvac-comman
 
 # SmartIR Component Config
 
-First you will have to copy your json config to SmartIR directory and sve it with a number XXXX.json
+First you will have to copy your json config to SmartIR directory and save it with name as a number Ex. 1600.json
 
 ```
 <config directory>/
@@ -103,5 +105,5 @@ Example:
   controller_data: cmnd/studio/IRhvac # Change to match your device topic
   temperature_sensor: sensor.studio_temperature # Change to match your sensor id in Home Assistant
   humidity_sensor: sensor.studio_humidity # Change to match your sensor id in Home Assistant 
-  power_sensor: binary_sensor.ac_power
+  power_sensor: binary_sensor.ac_power # you can set a binery sensor to detect the power status
 ```

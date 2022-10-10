@@ -79,7 +79,9 @@ Source <a href="https://tasmota.github.io/docs/Tasmota-IR/#sending-irhvac-comman
   </tr>
 </tbody>
 </table>
+
 # SmartIR Component Config
+
 First you will have to copy your json config to SmartIR directory and sve it with a number XXXX.json
 
 ```
@@ -90,7 +92,7 @@ First you will have to copy your json config to SmartIR directory and sve it wit
 |           |-- climate
 ```
 
-you can nowadd your device config in climate.yaml
+you can now add your device config in climate.yaml
 
 Example:
 ```yaml

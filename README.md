@@ -53,7 +53,7 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 ![alt text](https://github.com/iq85k/MQTT-IR-Controller-Tasmota/blob/main/Circuit%20diagram.jpg)
 
 # Instructions
-- first you will need to install flash Tasmota on ESP-01 using USB to Serial UART adapter of your choice with the BIN file provided in files above.
+- first you will need to flash Tasmota on ESP-01 using USB to Serial UART adapter of your choice with the BIN file provided in files above.
 - after flashing you will need to connect to WIFI signal Called tasmota-xxxxxxxxx and insert your home WIFI credentials.
 - by providing WIFI credentials you will showen the IP address for your Tasmota device.
 - after the device is connected successfully you will be able to access your device to put in your MQTT info and choose a topic.

@@ -59,6 +59,7 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 - after the device is connected successfully you will be able to access your device to put in your MQTT info and choose a topic.
 
 # Sending IRHVAC Commands
+Source <a href="https://tasmota.github.io/docs/Tasmota-IR/#sending-irhvac-commands">Click Here</a>
 <table>
 <thead>
   <tr>

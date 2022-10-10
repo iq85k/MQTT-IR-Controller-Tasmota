@@ -8,6 +8,11 @@ This conntroller is runing with Tasmota IR 8.3.1 if you want to know More about 
 
 also using the SmartIR plugin that creates the Home Assistant climate componant and publish the commands via MQTT you can find more about it in details and more about installation <a href="https://github.com/smartHomeHub/SmartIR">Click Here</a>
 
+# First things first
+  - make sure that you install SmartIR
+  - make sure that you have MQTT installed in Home Assistant and enable discovery
+  - Make sure that you have the Tasmota plug in installed and configured in Home Assistant
+
 # Required Components
 
 <table>
@@ -74,3 +79,27 @@ Source <a href="https://tasmota.github.io/docs/Tasmota-IR/#sending-irhvac-comman
   </tr>
 </tbody>
 </table>
+# SmartIR Component Config
+First you will have to copy your json config to SmartIR directory and sve it with a number XXXX.json
+
+```
+<config directory>/
+|-- custom_components/
+|   |-- smartir/
+|       |-- codes
+|           |-- climate
+```
+
+you can nowadd your device config in climate.yaml
+
+Example:
+```yaml
+- platform: smartir
+  name: Office A/C 
+  unique_id: office_ac
+  device_code: 1600 # your JSON file number
+  controller_data: cmnd/studio/IRhvac # Change to match your device topic
+  temperature_sensor: sensor.studio_temperature # Change to match your sensor id in Home Assistant
+  humidity_sensor: sensor.studio_humidity # Change to match your sensor id in Home Assistant 
+  power_sensor: binary_sensor.ac_power
+```

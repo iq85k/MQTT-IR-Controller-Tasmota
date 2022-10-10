@@ -9,9 +9,9 @@ This conntroller is runing with Tasmota IR 8.3.1 if you want to know More about 
 also using the SmartIR plugin that creates the Home Assistant climate componant and publish the commands via MQTT you can find more about it in details and more about installation <a href="https://github.com/smartHomeHub/SmartIR">Click Here</a>
 
 # First things first
-  - make sure that you install SmartIR
-  - make sure that you have MQTT installed in Home Assistant and enable discovery
-  - Make sure that you have the Tasmota plug in installed and configured in Home Assistant
+  - Make sure that you install SmartIR
+  - Make sure that you have MQTT installed in Home Assistant and enable discovery
+  - Make sure that you have the Tasmota plug-in installed and configured in Home Assistant
 
 # Required Components
 

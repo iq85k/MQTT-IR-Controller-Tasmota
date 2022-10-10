@@ -57,3 +57,19 @@ also using the SmartIR plugin that creates the Home Assistant climate componant 
 - after flashing you will need to connect to WIFI signal Called tasmota-xxxxxxxxx and insert your home WIFI credentials.
 - you need to find your device IP address by checking you router DHTP clients page.
 - after the device is connected successfully you will be able to access your device to put in your MQTT info and choose a topic.
+
+# Sending IRHVAC Commands
+<table>
+<thead>
+  <tr>
+    <th>Command</th>
+    <th>Parameters</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>IRHVAC</td>
+    <td>Send HVAC IR remote control code as JSON payload<br><br>IRHVAC {"Vendor":"Mitsubishi_Heavy_152", "Power":"On","Mode":"Hot","FanSpeed":3,"Temp":22.5}<br><br>"Protocol" or "Vendor" (select one of the following):<br>COOLIX, DAIKIN, KELVINATOR, MITSUBISHI_AC, GREE, ARGO, TROTEC, TOSHIBA_AC, FUJITSU_AC, MIDEA, HAIER_AC, HITACHI_AC, HAIER_AC_YRW02, WHIRLPOOL_AC, SAMSUNG_AC, ELECTRA_AC, PANASONIC_AC, DAIKIN2, VESTEL_AC, TECO, TCL112AC, MITSUBISHI_HEAVY_88, MITSUBISHI_HEAVY_152, DAIKIN216, SHARP_AC, GOODWEATHER, DAIKIN160, NEOCLIMA, DAIKIN176, DAIKIN128<br><br>"Model":<br> <br>Some HVAC have variants in protocols, this field allows to specify the variant, see <a href="https://github.com/crankyoldgit/IRremoteESP8266/blob/master/SupportedProtocols.md" target="_blank" rel="noopener noreferrer">detailed list</a><br><br>- Fujitsu_AC: ARRAH2E|ARDB1<br>- Panasonic_AC: LKE|NKE|DKE|JKE|CKP|RKR<br>- Whirlpool_AC: DG11J13A|DG11J104|DG11J1-04|DG11J191<br><br>"Power":<br>&nbsp;&nbsp;&nbsp;On, Yes, True, 1,<br>&nbsp;&nbsp;&nbsp;Off, No, False, 0<br><br>"Mode":<br>&nbsp;&nbsp;&nbsp;Off, Stop<br>&nbsp;&nbsp;&nbsp;Auto, Automatic<br>&nbsp;&nbsp;&nbsp;Cool, Cooling<br>&nbsp;&nbsp;&nbsp;Heat, Heating<br>&nbsp;&nbsp;&nbsp;Dry, Drying, Dehumidify<br>&nbsp;&nbsp;&nbsp;Fan, Fanonly, Fan_Only<br><br>"FanSpeed":<br>&nbsp;&nbsp;&nbsp;Auto, Automatic<br>&nbsp;&nbsp;&nbsp;Min, Minimum, Lowest, 1<br>&nbsp;&nbsp;&nbsp;Low, 2<br>&nbsp;&nbsp;&nbsp;Med, Medium, Mid, 3<br>&nbsp;&nbsp;&nbsp;High, Hi, 4<br>&nbsp;&nbsp;&nbsp;Max, Maximum, Highest, 5<br><br>"SwingV":<br>&nbsp;&nbsp;&nbsp;vertical swing of Fan<br>&nbsp;&nbsp;&nbsp;Auto, Automatic, On, Swing<br>&nbsp;&nbsp;&nbsp;Off, Stop<br>&nbsp;&nbsp;&nbsp;Min, Minimum, Lowest, Bottom, Down<br>&nbsp;&nbsp;&nbsp;Low<br>&nbsp;&nbsp;&nbsp;Mid, Middle, Med, Medium, Centre, Center<br>&nbsp;&nbsp;&nbsp;High, Hi<br>&nbsp;&nbsp;&nbsp;Highest, Max, Maximum, Top, Up<br><br>"SwingH":<br>&nbsp;&nbsp;&nbsp;horizontal swing of Fan<br>&nbsp;&nbsp;&nbsp;Auto, Automatic, On, Swing<br>&nbsp;&nbsp;&nbsp;Off, Stop<br>&nbsp;&nbsp;&nbsp;LeftMax, Left Max, MaxLeft, Max Left, FarLeft, Far Left<br>&nbsp;&nbsp;&nbsp;Left<br>&nbsp;&nbsp;&nbsp;Mid, Middle, Med, Medium, Centre, Center<br>&nbsp;&nbsp;&nbsp;Right<br>&nbsp;&nbsp;&nbsp;RightMax, Right Max, MaxRight, Max Right, FarRight, Far Right<br>&nbsp;&nbsp;&nbsp;Wide<br><br>"Celsius": temperature is in Celsius ("On") or Farenheit ("Off")<br><br>"Temp": Temperature, can be float if supported by protocol<br><br>"Quiet": Quiet mode ("On"/"Off")<br><br>"Turbo": Turbo mode ("On"/"Off")<br><br>"Econo": Econo mode ("On"/"Off")<br><br>"Light": Light ("On"/"Off")<br><br>"Filter": Filter active ("On"/"Off")<br><br>"Clean": Clean mode ("On"/"Off")<br><br>"Beep": Beep active ("On"/"Off")<br><br>"Sleep": Timer in seconds<br><br>"StateMode":<br>&nbsp;&nbsp;&nbsp;SendOnly (default)<br>&nbsp;&nbsp;&nbsp;StoreOnly<br>&nbsp;&nbsp;&nbsp;SendStore</td>
+  </tr>
+</tbody>
+</table>
